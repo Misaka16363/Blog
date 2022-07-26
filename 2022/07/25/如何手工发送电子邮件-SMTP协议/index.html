@@ -333,19 +333,19 @@
 
 <ol>
 <li><p>首先连接到163的smtp服务器，我们使用25端口</p>
-<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">telnet</span> smtp.<span class="hljs-number">163</span>.com <span class="hljs-number">25</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">telnet smtp.163.com 25<br></code></pre></td></tr></table></figure>
 <blockquote>
 <p>Trying 123.126.97.113…<br>Connected to smtp.163.com.<br>Escape character is ‘^]’.<br>220 163.com Anti-spam GT for Coremail System (163com[20141201])</p>
 </blockquote>
 </li>
 <li><p>跟服务器打个招呼吧！（选择模式）</p>
-<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">helo</span> smtp.<span class="hljs-number">163</span>.com<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">helo smtp.163.com<br></code></pre></td></tr></table></figure>
 <blockquote>
 <p>250 OK</p>
 </blockquote>
 </li>
 <li><p>现在我们来登录</p>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">auth login</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">auth login<br></code></pre></td></tr></table></figure>
 <blockquote>
 <p>334 dXNlcm5hbWU6</p>
 </blockquote>
@@ -356,7 +356,7 @@
           </div>
 
 <ol start="4">
-<li>现在输入base64编码过的邮箱（去网上搜Base64工具&#x2F;使用命令行编码）<br>得到类似下面这样的东西<figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs abnf"><span class="hljs-attribute">c2VuZGVyQDE2My5jb20</span><span class="hljs-operator">=</span><br></code></pre></td></tr></table></figure>
+<li>现在输入base64编码过的邮箱（去网上搜Base64工具&#x2F;使用命令行编码）<br>得到类似下面这样的东西<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">c2VuZGVyQDE2My5jb20=<br></code></pre></td></tr></table></figure>
 <blockquote>
 <p>334 UGFzc3dvcmQ6</p>
 </blockquote>
@@ -367,7 +367,7 @@
           </div>
 
 <ol start="5">
-<li>好耶！现在输入base64编码过的密码（令牌），同上，得到如下面这样<figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs gcode">YXV<span class="hljs-number">0</span>a<span class="hljs-name">G9</span>yaXphdGlvbiBjb<span class="hljs-number">2</span>Rl<br></code></pre></td></tr></table></figure>
+<li>好耶！现在输入base64编码过的密码（令牌），同上，得到如下面这样<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">YXV0aG9yaXphdGlvbiBjb2Rl<br></code></pre></td></tr></table></figure>
 <blockquote>
 <p>235 Authentication successful</p>
 </blockquote>
@@ -375,27 +375,27 @@
 </ol>
 <h2 id="发送一个邮件"><a href="#发送一个邮件" class="headerlink" title="发送一个邮件"></a>发送一个邮件</h2><ol>
 <li><p>现在登录成功了！我们来尝试发送一个邮件，首先按照如下格式输入登录邮箱</p>
-<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs angelscript">mail <span class="hljs-keyword">from</span>:&lt;<span class="hljs-symbol">sender@</span><span class="hljs-number">163.</span>com&gt;<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">mail from:&lt;sender@163.com&gt;<br></code></pre></td></tr></table></figure>
 <blockquote>
 <p>250 Mail OK</p>
 </blockquote>
 </li>
 <li><p>我们再来输入目标邮箱（这是我的咳咳）</p>
-<figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs autoit">rcpt <span class="hljs-keyword">to</span>:&lt;test<span class="hljs-symbol">@misaka</span>.contact&gt;<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">rcpt to:&lt;<span class="hljs-built_in">test</span>@misaka.contact&gt;<br></code></pre></td></tr></table></figure>
 <blockquote>
 <p>250 Mail OK</p>
 </blockquote>
 </li>
 <li><p>告诉服务器我们要开始输入内容了！</p>
-<figure class="highlight haskell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs haskell"><span class="hljs-class"><span class="hljs-keyword">data</span></span><br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">data<br></code></pre></td></tr></table></figure>
 <blockquote>
 <p>354 End data with <CR><LF>.<CR><LF></p>
 </blockquote>
 </li>
 <li><p>内容部分，Subject是主题</p>
-<figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs vbnet"><span class="hljs-symbol">Subject:</span> test mail<br>Hi, test2<br>This <span class="hljs-built_in">is</span> a test mail, you don<span class="hljs-comment">&#x27;t reply it.</span><br></code></pre></td></tr></table></figure></li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">Subject: <span class="hljs-built_in">test</span> mail<br>Hi, test2<br>This is a <span class="hljs-built_in">test</span> mail, you don<span class="hljs-string">&#x27;t reply it.</span><br></code></pre></td></tr></table></figure></li>
 <li><p>换行后再输入</p>
-<figure class="highlight erlang"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs erlang">.<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">.<br></code></pre></td></tr></table></figure>
 <p>并按 Enter 键发送邮件！</p>
 <blockquote>
 <p>250 Mail OK queued as smtp4,…</p>
@@ -486,6 +486,12 @@
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2022/07/22/hello-world/" title="Hello World">
+                        <span class="hidden-mobile">Hello World</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
