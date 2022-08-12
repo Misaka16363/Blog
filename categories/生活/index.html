@@ -16,34 +16,23 @@
   <meta name="author" content="Misaka16363">
   <meta name="keywords" content="">
   
-    <meta name="description" content="笔记而非教程，总结自技术蛋老师；B站视频嵌入方法来源于Cyril；">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Vim基础使用笔记">
-<meta property="og:url" content="https://www.misaka.contact/2022/07/29/Vim%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/">
+    <meta property="og:type" content="website">
+<meta property="og:title" content="分类 - 生活">
+<meta property="og:url" content="https://www.misaka.contact/categories/%E7%94%9F%E6%B4%BB/">
 <meta property="og:site_name" content="Misaka16363">
-<meta property="og:description" content="笔记而非教程，总结自技术蛋老师；B站视频嵌入方法来源于Cyril；">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-07-29T11:00:00.000Z">
-<meta property="article:modified_time" content="2022-08-12T13:52:42.976Z">
 <meta property="article:author" content="Misaka16363">
-<meta property="article:tag" content="vim">
 <meta name="twitter:card" content="summary_large_image">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>Vim基础使用笔记 - Misaka16363</title>
+  <title>分类 - 生活 - Misaka16363</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
 
 
 
@@ -108,7 +97,7 @@
   <header>
     
 
-<div class="header-inner" style="height: 70vh;">
+<div class="header-inner" style="height: 60vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -225,57 +214,9 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Vim基础使用笔记"></span>
+            <span id="subtitle" data-typed-text="分类 - 生活"></span>
           
         </div>
-
-        
-          
-  <div class="mt-3">
-    
-    
-      <span class="post-meta">
-        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-07-29 19:00" pubdate>
-          2022年7月29日 晚上
-        </time>
-      </span>
-    
-  </div>
-
-  <div class="mt-1">
-    
-      <span class="post-meta mr-2">
-        <i class="iconfont icon-chart"></i>
-        
-          386 字
-        
-      </span>
-    
-
-    
-      <span class="post-meta mr-2">
-        <i class="iconfont icon-clock-fill"></i>
-        
-        
-        
-          5 分钟
-        
-      </span>
-    
-
-    
-    
-      
-        <span id="busuanzi_container_page_pv" style="display: none">
-          <i class="iconfont icon-eye" aria-hidden="true"></i>
-          <span id="busuanzi_value_page_pv"></span> 次
-        </span>
-        
-      
-    
-  </div>
-
 
         
       </div>
@@ -291,221 +232,40 @@
 
   <main>
     
-      
-
-<div class="container-fluid nopadding-x">
-  <div class="row nomargin-x">
-    <div class="side-col d-none d-lg-block col-lg-2">
-      
-
-    </div>
-
-    <div class="col-lg-8 nopadding-x-md">
-      <div class="container nopadding-x-md" id="board-ctn">
-        <div id="board">
-          <article class="post-content mx-auto">
-            <!-- SEO header -->
-            <h1 style="display: none">Vim基础使用笔记</h1>
-            
-              <p class="note note-info">
-                
-                  
-                    本文最后更新于：几秒前
-                  
-                
-              </p>
-            
-            
-              <div class="markdown-body">
-                
-                <blockquote>
-<p>笔记而非教程，总结自<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV13t4y1t7Wg">技术蛋老师</a>；B站视频嵌入方法来源于<a target="_blank" rel="noopener" href="https://www.cyrilstudio.top/archives/331/">Cyril</a>；</p>
-</blockquote>
-<span id="more"></span>
-
-<iframe src="//player.bilibili.com/player.html?aid=983519439&bvid=BV13t4y1t7Wg&cid=775999565&page=1&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
-
-
-<ul>
-<li><code>i</code> - 编辑模式（插前）</li>
-<li><code>I</code> - 编辑模式（插最前） </li>
-<li><code>a</code> - 编辑模式（附后）</li>
-<li><code>A</code> - 编辑模式（附最后）</li>
-<li><code>o</code> - 新增下一行</li>
-<li><code>O</code> - 新增上一行</li>
-<li><code>hjkl</code> - 前上下后</li>
-<li><code>G</code> - 移动到最顶部</li>
-<li><code>gg</code> - 移动到最底部</li>
-<li><code>[Num]j</code> - 下移相对行数</li>
-<li><code>[Num]k</code> - 上移相对行数</li>
-<li><code>yy</code> - 复制行</li>
-<li><code>dd</code> - 删除行</li>
-<li><code>.</code> - 重复操作</li>
-<li><code>u</code> - 撤销操作</li>
-<li><code>Ctrl + r</code> - 恢复操作</li>
-<li><code>yw</code> - 复制单词</li>
-<li><code>dw</code> - 删除单词</li>
-<li><code>cw</code> - 改变单词</li>
-<li><code>w</code> - 下个单词首部</li>
-<li><code>e</code> - 下个单词尾部</li>
-<li><code>b</code> - 上个单词首部</li>
-<li><code>esc</code> - 正常模式</li>
-<li><code>:</code> - 命令行模式</li>
-<li><code>:q</code> - 仅退出</li>
-<li><code>:q!</code> - 不保存退出</li>
-<li><code>:wq</code> - 保存退出</li>
-<li><code>/</code> - 搜索</li>
-<li><code>:%s/旧字符/新字符/g</code> - 全局替换</li>
-<li><code>[Num]p</code> - 粘贴[Num]次</li>
-<li><code>ci[&#39;(&#39;, &#39;[&#39;, &#39;&#123;&#39;]</code> - 删除[‘()’, ‘[]’, ‘{}’]里的内容</li>
-<li><code>ctrl + v</code> - 可视化块</li>
-<li><code>Shift + v</code> - 可视化行</li>
-</ul>
-
-                
-              </div>
-            
-            <hr/>
-            <div>
-              <div class="post-metas my-3">
-  
-  
-    <div class="post-meta">
-      <i class="iconfont icon-tags"></i>
-      
-        <a href="/tags/vim/">#vim</a>
-      
-    </div>
-  
-</div>
-
-
-              
-  
-
-  <div class="license-box my-3">
-    <div class="license-title">
-      <div>Vim基础使用笔记</div>
-      <div>https://www.misaka.contact/2022/07/29/Vim基础使用笔记/</div>
-    </div>
-    <div class="license-meta">
-      
-        <div class="license-meta-item">
-          <div>作者</div>
-          <div>Misaka16363</div>
-        </div>
-      
-      
-        <div class="license-meta-item license-meta-date">
-          <div>发布于</div>
-          <div>2022年7月29日</div>
-        </div>
-      
-      
-      <div class="license-meta-item">
-        <div>许可协议</div>
-        <div>
+      <div class="container nopadding-x-md">
+        <div id="board"
+          >
           
-            
-            
-              <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
-              <span class="hint--top hint--rounded" aria-label="BY - 署名">
-                <i class="iconfont icon-by"></i>
-              </span>
-              </a>
-            
-          
-        </div>
-      </div>
-    </div>
-    <div class="license-icon iconfont"></div>
-  </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
 
-
-
-              
-                <div class="post-prevnext my-3">
-                  <article class="post-prev col-6">
-                    
-                    
-                      <a href="/%E5%88%97%E8%A1%A8/" title="乱七八糟的列表">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">乱七八糟的列表</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
-                  </article>
-                  <article class="post-next col-6">
-                    
-                    
-                      <a href="/2022/07/25/%E5%A6%82%E4%BD%95%E6%89%8B%E5%B7%A5%E5%8F%91%E9%80%81%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6-SMTP%E5%8D%8F%E8%AE%AE/" title="手工发送邮件-SMTP协议">
-                        <span class="hidden-mobile">手工发送邮件-SMTP协议</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
-                    
-                  </article>
-                </div>
-              
-            </div>
-
-            
-  <article id="comments" lazyload>
+<div class="list-group">
+  <p class="h4">共计 1 篇文章</p>
+  <hr>
+  
+  
     
+      
+      <p class="h5">2022</p>
+    
+    <a href="/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F%E7%9A%84%E5%88%97%E8%A1%A8/" class="list-group-item list-group-item-action">
+      <time>08-09</time>
+      <div class="list-group-item-title">乱七八糟的列表</div>
+    </a>
+  
+</div>
 
-  </article>
 
 
-          </article>
+
+
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="side-col d-none d-lg-block col-lg-2">
-      
-  <aside class="sidebar" style="margin-left: -1rem">
-    <div id="toc">
-  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
-  <div class="toc-body" id="toc-body"></div>
-</div>
-
-
-
-  </aside>
-
-
-    </div>
-  </div>
-</div>
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-
     
 
     
@@ -623,72 +383,6 @@
 
 
 
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
-    var toc = jQuery('#toc');
-    if (toc.length === 0 || !window.tocbot) { return; }
-    var boardCtn = jQuery('#board-ctn');
-    var boardTop = boardCtn.offset().top;
-
-    window.tocbot.init({
-      tocSelector     : '#toc-body',
-      contentSelector : '.markdown-body',
-      headingSelector : CONFIG.toc.headingSelector || 'h1,h2,h3,h4,h5,h6',
-      linkClass       : 'tocbot-link',
-      activeLinkClass : 'tocbot-active-link',
-      listClass       : 'tocbot-list',
-      isCollapsedClass: 'tocbot-is-collapsed',
-      collapsibleClass: 'tocbot-is-collapsible',
-      collapseDepth   : CONFIG.toc.collapseDepth || 0,
-      scrollSmooth    : true,
-      headingsOffset  : -boardTop
-    });
-    if (toc.find('.toc-list-item').length > 0) {
-      toc.css('visibility', 'visible');
-    }
-  });
-</script>
-
-
-  <script src=https://lib.baomitu.com/clipboard.js/2.0.10/clipboard.min.js></script>
-
-  <script>Fluid.plugins.codeWidget();</script>
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
-    window.anchors.options = {
-      placement: CONFIG.anchorjs.placement,
-      visible  : CONFIG.anchorjs.visible
-    };
-    if (CONFIG.anchorjs.icon) {
-      window.anchors.options.icon = CONFIG.anchorjs.icon;
-    }
-    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
-    var res = [];
-    for (var item of el) {
-      res.push('.markdown-body > ' + item.trim());
-    }
-    if (CONFIG.anchorjs.placement === 'left') {
-      window.anchors.options.class = 'anchorjs-link-left';
-    }
-    window.anchors.add(res.join(', '));
-  });
-</script>
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
-    Fluid.plugins.fancyBox();
-  });
-</script>
-
-
-  <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
 
