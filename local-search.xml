@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>公告</title>
+    <link href="/announcement/"/>
+    <url>/announcement/</url>
+    
+    <content type="html"><![CDATA[<p>原流量消耗器域名(miaoko.ml)被意外回收, 现托管在cf页面(miaoko.pages.dev)</p><span id="more"></span><p>吐槽: 因访问量较大, 注册仅三个月就被Freenom回收<br>不要相信免费域名(笑)</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>封锁·张爱玲</title>
     <link href="/Blockade-ZhangAiling/"/>
     <url>/Blockade-ZhangAiling/</url>
